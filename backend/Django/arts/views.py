@@ -369,7 +369,7 @@ def recommend_weather(request):
         weather_list.extend(list(art_table[art_table['art_emotion'] == emotions[3]].index))
         weather_list.extend(list(art_table[art_table['art_emotion'] == emotions[4]].index))
         weather_list.extend(list(art_table[art_table['art_emotion'] == emotions[5]].index))
-        WEATHER = '비오는 날 보기 좋은 작품'
+        WEATHER = '흐린 날 보기 좋은 작품'
     
     # anger, sadness, fear
     elif res['weather'][0]['main'] == 'Clouds':
